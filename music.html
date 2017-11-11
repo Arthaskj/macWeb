@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>music</title>
+	<link rel="stylesheet" type="text/css" href="css/music.css">
+	<script type="text/javascript" src="js/music.js"></script>
+</head>
+<body>
+	<textarea id="txt" style="display:none;">
+		[0:01]未知伴侣
+		[0:10]作曲 : 龚子婕
+
+		[0:20]作词 : 龚子婕
+
+		[0:32 ]呼吸屏著 雨下得很適合
+
+		[0:40 ]你看著我笑了 卻有些不捨
+
+		[0:47]思念很多 卻不承認想過
+
+		[0:54]你對於我來說 是比特別還更多
+
+		[01:01]多幸運是有你陪著我 多遺憾是愛卻不能說
+
+		[01:09]多忐忑是彷彿什麼都很難得卻很難掌握
+
+		[01:16]最可恨的是自己沒勇氣取捨 都是我
+
+		[01:25]我想 你呢
+
+		[01:30]想帶你看遍 人間煙火 走遍許多 我愛的角落
+
+		[01:38]想我一直對你來說 都是新鮮的
+
+		[01:45]想在海邊長椅躺著 品嚐幾個日升和月落
+
+		[01:53]遠離曾經的生活
+
+		[02:29]我哼著歌 手邊茶水涼了
+
+		[02:36]但同思念和著 也沒多苦澀
+
+		[02:44]很溫暖的 你會偷偷記得
+
+		[02:50]我最喜歡是什麼 還有什麼鍾意做
+
+		[02:58]最僥倖的是你陪著我 最難得的你全都懂得
+
+		[03:05]最不安的是我卻沒什麼特別能夠給你的
+
+		[03:12]沒說出口卻很想讓你知道的都唱成歌
+
+		[03:21]還有 很多
+
+		[03:30]我想我的你 是自由的 是開闊的 卻能惦著我
+
+		[03:38]我想各自經歷許多 風雨喜樂 有故事可以說
+
+		[03:44]想你以後無論身邊坐著牽著 是不是我
+
+		[03:53]這些心願 都會記得
+
+		[03:59]我承認全都是我的錯 不該放任自己不選擇
+
+		[04:08]不確定究竟有什麼不值得錯過
+
+		[04:14]明知這是不可避的 自己不該想得太多
+
+		[04:23]卻不責備自己曾做夢過
+
+		[04:29]故事結尾到底是你 是我
+
+		[04:42]END…
+
+	</textarea>
+	<div class="box1">
+		<div class="bar"></div>
+		<div class="bar2"><p style="width:30%;height:70%;color:#ccc;font-size:26px;font-family:SimHei ;position:absolute;top:0;left:0;right:0;bottom:0;margin: auto;">未知伴侣</p></div>
+		<div class="logo "  >
+			<div class="logo2"></div>
+		</div>
+		<div class="lrc">
+			<div class="content"></div>
+		</div>
+	</div>
+
+
+	<audio id="myMusic" src="music/龚子婕JessieG - 未知伴侣.mp3"></audio>
+	<script type="text/javascript">
+		var lrc=txt.value;
+		var lrcarr=lrc.split("[");
+	var html="";
+	for(var i=0;i<lrcarr.length;i++){
+
+		var arr=lrcarr.split("]");
+		var text=arr[1];
+		console.log(text);
+		if (text) {
+			html +="<p>"+text+"</p>";
+		}
+		con.innerHTML=html;
+	}
+	</script>
+</body>
+</html>
